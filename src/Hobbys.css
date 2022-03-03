@@ -1,0 +1,26 @@
+.hobbys {
+  color: var(--text-primary);
+  background-color: var(--background);
+  height: 100vh;
+  transition: all 0.5s;
+  text-align: center;
+
+}
+
+button {
+  color: var(--text-primary);
+  background-color: var(--background);
+  border: 2px var(--text-secondary) inset;
+  float: right;
+  transition: all 0.5s;
+  border-radius: 8px;
+}
+.colorBtn {
+  margin-top: 0;
+  border: 2px var(--text-secondary) inset;
+}
+
+.hobbyTxt {
+  margin: auto;
+  width: 80%;
+}

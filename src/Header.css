@@ -1,0 +1,42 @@
+.header {
+  margin: auto;
+  background: url('./img/ink.png');
+  width: 100%;
+  height: 370px;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: left;
+  background-position: 100%;
+  align-items: center;
+  /* border-bottom: 2px outset #DBD8E3; */
+  color: var(--text-primary);
+}
+@keyframes header {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.header {
+animation: header 1000ms ease;
+}
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

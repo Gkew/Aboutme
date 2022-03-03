@@ -1,0 +1,30 @@
+
+.sidenav {
+   float: right;
+
+  }
+  /* .sidenav ul {
+    list-style: none;
+    margin: 8px;
+    padding: 0
+  } */
+  .sidenav li {
+    display: inline-block;
+    padding: 0 40px;
+    ;
+  }
+  .sidenav a {
+    text-decoration: none;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lato';
+  }
+  .sidenav a:hover {
+    font-weight: lighter;
+  }
+  
+  .sidenav li:hover {
+    text-decoration: underline 2px;
+  }

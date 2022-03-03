@@ -1,0 +1,27 @@
+.navbar {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    height: 8%;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    padding: 3px;
+    height: 25px;
+    border-right: 2px inset black;
+    border-bottom: 2px inset black;
+    background-color: var(--background-color);
+}
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover {
+    background-color: rgb(170, 167, 167);
+    opacity: 90%;
+}
