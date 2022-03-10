@@ -1,50 +1,50 @@
 import React from "react";
 import "./Pictures.css";
-import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Header from "./Header";
-import useLocalStorage from "use-local-storage";
-import { useState } from 'react'
+import { useState } from "react";
 import Sidenav from "./Sidenav";
+import Tekken from "./img/tekken.jpg";
+import national from "./img/national.jpg";
 
 function Pictures() {
-  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [theme, setTheme] = useLocalStorage(
-    "theme",
-    defaultDark ? "dark" : "light"
-  );
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
+  const [cursor, setCursor] = useState("crosshair");
+  const changeCursor = () => {
+    setCursor((prevState) => {
+      if (prevState === "auto") {
+        return "grab";
+      }
+      return "auto";
+    });
   };
 
-  const [cursor, setCursor] = useState('crosshair');
-  const changeCursor = () => {
-    setCursor(prevState => {
-      if(prevState === 'auto'){
-        return 'grab';
-      }
-      return 'auto';
-    });
-  }
-
-
   return (
-
-    <div className="pictures" data-theme={theme}  style={{ cursor: cursor }}>
-    <Sidenav />
-      <button style={{border: '2px solid #352F44'}} onClick={switchTheme}>
-        Try the {theme === "light" ? "dark" : "light"} mode?
-      </button>
+    <div className="pictures" style={{ cursor: cursor }}>
+      <Sidenav />
       <Header />
-      <button type="button" value="Change cursor" onClick={changeCursor} style={{ cursor: cursor, border: '2px solid #352F44' }}>Cursor?</button>
-      
+      <button
+        type="button"
+        value="Change cursor"
+        onClick={changeCursor}
+        style={{ cursor: cursor }}
+      >
+        Cursor?
+      </button>
+
       <div className="pics">
-  <div className="one"></div>
-  <div className="two"></div>
-  <div className="three"></div>
-</div>
+        <div className="one">
+          <img style={{ width: "100%", height: "100%" }} src={Tekken} />
+        </div>
+        <div className="two">
+          <img style={{ width: "100%", height: "100%" }} src={national} />
+        </div>
+        <div className="three">
+          <img style={{ width: "100%", height: "100%" }} src={national} />
+        </div>
       </div>
 
+      <Footer />
+    </div>
   );
 }
 

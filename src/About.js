@@ -1,59 +1,37 @@
 import React from "react";
 import "./About.css";
 import Header from "./Header";
-import Navbar from "./Navbar";
 import Sidenav from "./Sidenav";
-// import Background from './img/cool-background.png'
-import useLocalStorage from "use-local-storage";
+import Footer from "./Footer";
+
 
 function About() {
-  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const [theme, setTheme] = useLocalStorage(
-    "theme",
-    defaultDark ? "dark" : "light"
-  );
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
-  return (
-    <div className="about" data-theme={theme}>
-    <Sidenav />
-      <button style={{border: '2px solid #DBD8E3'}} onClick={switchTheme}>
-        Try the {theme === "light" ? "dark" : "light"} mode?
-      </button>
 
+  return (
+    <div className="about">
+    <Sidenav />
       <Header />
 
-      <div className="aboutTxt">
+      <div className="aboutTxt" style={{textAlign: 'inherit'}}>
         <h2>Om mig</h2>
         <p>
+        {" "}
+        Vad kan vi säga om mig?
+        <br />
+        Jag heter Emelie, är 29 år och bor i Huddinge.
+        <br />
+        Jag studerar just nu Frontendutveckling med inriktning på webbsäkerhet via JENSEN-Yh och trivs som fisken i vattnet. 
+        Jag har sedan barnsben haft ett stort intresse för teknik och det mesta som tillhör datorer och har nu i flera år tänkt söka mig 
+        till just programmering. 
+        Tanken var egentligen att jag skulle studera vidare inom kemi och läkemedel, men beslutade mig veckan innan kurserna skulle starta 
+        att jag antagligen kommer ångra mig resten av mitt liv om jag inte hoppar på att koda. 
+        Och simsallabim så är jag nu din student i den här kursen.  
+          
           {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-          accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-          molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-          officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-          nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-          error repudiandae fuga? Ipsa laudantium molestias eos sapiente
-          officiis modi at sunt excepturi expedita sint? Sed quibusdam
-          recusandae alias error harum maxime adipisci amet laborum.
-          Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates a
-          cumque velit quibusdam sed amet tempora. Sit laborum ab, eius fugit
-          doloribus tenetur fugiat, temporibus enim commodi iusto libero magni
-          deleniti quod quam consequuntur! Commodi minima excepturi repudiandae
-          velit hic maxime doloremque. Quaerat provident commodi consectetur
-          veniam similique ad earum omnis ipsum saepe, voluptas, hic voluptates
-          pariatur est explicabo fugiat, dolorum eligendi quam cupiditate
-          excepturi mollitia maiores labore suscipit quas? Nulla, placeat.
-          Voluptatem quaerat non architecto ab laudantium modi minima sunt esse
-          temporibus sint culpa, recusandae aliquam numquam totam ratione
-          voluptas quod exercitationem fuga. Possimus quis earum veniam quasi
-          aliquam eligendi, placeat qui corporis!{" "}
         </p>
       </div>
+
+<Footer />
     </div>
   );
 }

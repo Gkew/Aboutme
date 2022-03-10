@@ -1,42 +1,40 @@
-
 .pics {
+  height: 100vh;
+  justify-content: center;
   margin-top: 20px;
-  border: 1px solid black;
- display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "one two three"
-      "one two three"
-      "one two three";
-  }
-  
-  .one { grid-area: one; }
-  
-  .two { grid-area: two; }
-  
-  .three { grid-area: three; }
-  
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 400px;
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "one two three";
+}
 
-a {
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+/* a {
   text-decoration: none;
   color: black;
-}
+} */
 .pictures {
   color: var(--text-primary);
-  background-color: var(--background);
-
+  /* background-color: var(--background); */
   transition: all 0.5s;
   text-align: center;
-
 }
 button {
   color: var(--text-primary);
   background-color: var(--background);
-  border: 2px var(--text-secondary) inset;
   float: right;
   transition: all 0.5s;
-  border-radius: 8px;
 }

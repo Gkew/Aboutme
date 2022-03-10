@@ -1,31 +1,34 @@
-import React from 'react'
-import './Sidenav.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import "./Sidenav.css";
+import { Link } from "react-router-dom";
 
 function Sidenav() {
-
   return (
-    <div className='sidenav'>
+    <div className="sidenav">
+      <div className="dropdown">
+        <div className="dropbtn">
+          <p>
+            {" "}
+            The Code <i class="arrow down"></i>
+          </p>{" "}
+        </div>
+        <div className="dropdown-content">
+          <a href="https://github.com/Gkew/Aboutme" target="_blank">
+            Repository
+          </a>
 
-<li><Link to="/about">
-      About
-    </Link></li>
+        </div>
+      </div>
 
-    <li><Link to="/hobbys">
-      Hobbys
-    </Link></li>
+      <Link to="/about">About</Link>
 
-    <li><Link to="/pictures">
-      Pictures
-    </Link></li>
+      <Link to="/hobbys">Hobbys</Link>
+      <Link to="/about"><div className="logo">EMMI</div></Link>
+      <Link to="/pictures">Pictures</Link>
 
-    <li><Link to="/contact">
-      Contact
-    </Link></li>
-
-  </div>
-
-  )
+      <Link to="/contact">Contact</Link>
+    </div>
+  );
 }
 
-export default Sidenav
+export default Sidenav;

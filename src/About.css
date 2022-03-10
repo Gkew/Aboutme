@@ -3,20 +3,18 @@
     text-align: center;
     color: var(--text-primary);
     background-color: var(--background);
-    height: 100vh;
+    height: 110vh;
     transition: all .5s;
-
-
-
   }
+
   button {
     color: var(--text-primary);
     background-color: var(--background);
-    border: 2px var(--text-primary) inset;
     float: right;
     transition: all .5s;
   }
   .aboutTxt {
+    padding: 20px;
     width: 80%;
     margin: auto;
   }
