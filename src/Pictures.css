@@ -1,40 +1,12 @@
-.pics {
-  height: 100vh;
-  justify-content: center;
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 400px;
-  gap: 0px 10px;
-  grid-auto-flow: row;
-  grid-template-areas: "one two three";
-}
-
-.one {
-  grid-area: one;
-}
-
-.two {
-  grid-area: two;
-}
-
-.three {
-  grid-area: three;
-}
-
-/* a {
-  text-decoration: none;
-  color: black;
-} */
 .pictures {
-  color: var(--text-primary);
-  /* background-color: var(--background); */
-  transition: all 0.5s;
-  text-align: center;
+  margin: 0 auto;
+  min-height: 140vh;
 }
-button {
-  color: var(--text-primary);
-  background-color: var(--background);
-  float: right;
-  transition: all 0.5s;
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 30%;
+  padding: 5px;
 }

@@ -1,0 +1,102 @@
+
+.link-content, a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+.link-content a:hover {
+    color: gray;
+}
+
+.tutorialBtn {
+    padding: 5px;
+    margin-right: 40px;
+    border-radius: 8%;
+    background-color: antiquewhite;
+    box-shadow: 3px 4px rgba(0,0,0,0.2);
+}
+.tutorialBtn:hover {
+    background-color: rgba(0,0,1,0.2);
+    box-shadow: 3px 4px rgba(0,0,0,0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    color:antiquewhite;
+}
+.weather {
+    min-height: 70vh;
+    margin-top: 20%;
+    margin: 0 auto;
+    border-radius: 4%;
+    width: 30%;
+    background-image: url('https://images.clipartlogo.com/files/istock/previews/7628/76282671-ice-cold-blue-background-with-bokeh-and-rays.jpg');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.5 ease-out;
+
+}
+.weather.warm .weather {
+    background-image: url('https://img.wallpapersafari.com/desktop/1600/900/99/1/kJeDZI.jpg');
+}
+
+main {
+    background-image: linear-gradient(to bottom, rbga(0,0,0,0.2), rbga(0,0,0,0.75));
+}
+.search-box{
+    width: 100%;
+    margin: 0 auto 75px;
+}
+.search-box .search-bar {
+    margin: 0 auto;
+    padding: 15px;
+    display: block;
+    width: 90%;
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 0px 0px 16px 16px;
+    box-shadow: 0px 5px rgba(0,0,0,0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search-box .search-bar:focus {
+    background-color: rgba(255,255,255, 0.5);
+}
+.location-box .location {
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+.location-box .date {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+.weather-box {
+    text-align: center;
+}
+.weather-box .temp {
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    background-color: rgba(255,255,255, 0.2);
+    border-radius: 18px;
+    padding: 15px 25px;
+    font-size: 102px;
+    font-weight: 900;
+    text-shadow: 3px 10px rgb(50,50,70,0.5);
+    text-align: center;
+    color: white;
+}
+
+.weather-type {
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+}

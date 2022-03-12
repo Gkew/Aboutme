@@ -4,34 +4,66 @@ import Header from "./Header";
 import Sidenav from "./Sidenav";
 import Footer from "./Footer";
 
-
 function About() {
-
   return (
     <div className="about">
-    <Sidenav />
+      <Sidenav />
       <Header />
 
-      <div className="aboutTxt" style={{textAlign: 'inherit'}}>
+      <div className="aboutTxt">
         <h2>Om mig</h2>
         <p>
-        {" "}
-        Vad kan vi säga om mig?
-        <br />
-        Jag heter Emelie, är 29 år och bor i Huddinge.
-        <br />
-        Jag studerar just nu Frontendutveckling med inriktning på webbsäkerhet via JENSEN-Yh och trivs som fisken i vattnet. 
-        Jag har sedan barnsben haft ett stort intresse för teknik och det mesta som tillhör datorer och har nu i flera år tänkt söka mig 
-        till just programmering. 
-        Tanken var egentligen att jag skulle studera vidare inom kemi och läkemedel, men beslutade mig veckan innan kurserna skulle starta 
-        att jag antagligen kommer ångra mig resten av mitt liv om jag inte hoppar på att koda. 
-        Och simsallabim så är jag nu din student i den här kursen.  
-          
           {" "}
+          Jag heter Emelie, 29 år är bosatt i Huddinge. Jag är studierepresentant för FWK21 och
+          studerar just nu min andra termin inom Frontendutveckling med
+          inrikting säkerhet och trivs verkligen jättebra.
+          <br />
+          Jag har alltid haft ett sort intresse för teknik och It och har under
+          flera år tänk mig börja med just programmering. Innan jag började i
+          FWK21 så hade jag pluggat upp en del betyg inom kemi och
+          naturkunskapsämnen för att byta bana till just medicin och kemi, men
+          bestämde mig veckan innan kurstart att det här var det jag alltid
+          velat göra och jag antagligen skulle ångra mig om jag inte hoppade på
+          det nu.
+          <br />
+          <br />
+          När jag inte försöker mig på att programmera så är mina intressen spel, gym, gå på spelningar och hänga med mina vänner.
+          <br />
+          Det blir allt från uno till psVR och är smått stammis på akraden på HEYsthlm.
+         
+          <br />
+
+          <br />
+          <br />
+          <strong>Random facts</strong>
+          <div className="content">
+            
+            <div className="box2">
+              <small>
+                Arbetat med allt ifrån restaurangansvarig till resurspedagog,
+                Proddass för Stockholmskulturfestival och inspelningsassistent
+                på SvT.
+                <br />
+                Även en hel del inom event, från Blixten&Co till
+                evenemangssäkerhet.
+              </small>
+            </div>
+            <div className="box3">
+              <small>
+                Varit på en del roliga ställen så som Morfar Ginko & Papa
+                rayray,
+                <br />
+                Ramblas Hornstull, och har även varit med att starta upp en
+                diy-bar i hornstull som hette Cosmpolite där jag och en kompis
+                körde en retro spelklubb med en hel drös gamla konsoller på
+                obligatorisk tjocktv.
+              </small>
+            </div>
+          </div>{" "}
         </p>
       </div>
 
-<Footer />
+      <Footer />
     </div>
   );
 }

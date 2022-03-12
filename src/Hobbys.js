@@ -4,6 +4,7 @@ import Header from "./Header";
 import "./Hobbys.css";
 import Sidenav from "./Sidenav";
 import Footer from "./Footer";
+import Weather from "./Weather";
 
 function Hobbys() {
   const [color, setColor] = useState("black");
@@ -17,7 +18,7 @@ function Hobbys() {
       <button className="colorBtn" onClick={() => setColor("white")}>
         Still to bright?
       </button>
-
+      <Weather />
       <div className="hobbyTxt">
         <h2 style={{ color }}> Hobbys </h2>
         <p style={{ color }}>Spel: Barer: Filmer:</p>

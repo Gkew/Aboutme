@@ -17,4 +17,21 @@
     padding: 20px;
     width: 80%;
     margin: auto;
+    text-align: left;
+  }
+  .content, li {
+    display: flex;
+    text-decoration: none;
+    justify-content: left;
+    gap: 25%;
+ 
+  }
+  .content {
+    margin-bottom: 20%;
+  }
+  .box2, .box3 {
+    margin-top: 2%;
+    text-align: left;
+    width: 25%;
+   align-items: left;
   }

@@ -9,7 +9,7 @@ background-color: var(--background);
 :root {
   --background: #dbd8e3;
   --text-primary: #2a2438;
-  --accent: purple;
+
 }
 [data-theme="dark"] {
   --background: #2a2438;
